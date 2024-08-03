@@ -1,0 +1,131 @@
+/* style.css */
+body {
+  font-family: "poppins", sans-serif;
+}
+
+.shadow-custom {
+  box-shadow: 0 60px 80px 10px rgba(255, 121, 63, 0.304); /* Shadow besar dan buram dengan warna #FF793F */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  display: block;
+  padding: 8px 12px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #f0f0f0;
+  /* Tambahkan shadow untuk efek hover tanpa mengubah ukuran elemen */
+  box-shadow: inset 0 -2px 0 0 #ff793f;
+}
+
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-item {
+  min-width: 50%;
+  box-sizing: border-box;
+}
+
+.testimonial-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.testimonial-controls button {
+  background-color: #ff793f;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.testimonial-controls button:hover {
+  background-color: #e06635;
+}
+
+.custom-margin-fu {
+  margin-left: 123px;
+}
+
+.box-4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.toggleButton {
+  font-size: 44px;
+  color: #ff793f;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-left: 50px;
+}
+
+.toggleContent {
+  max-height: 0; /* Hide content by default */
+  overflow: hidden; /* Hide overflow to keep the box clean */
+  opacity: 0; /* Set initial opacity to 0 for smooth transition */
+  margin-top: 16px;
+  color: #6b7280;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.toggleContent.show {
+  max-height: 500px; /* Set to a value greater than the content's height */
+  opacity: 1; /* Make content fully visible */
+}
+
+.CTA {
+  position: relative; /* Ensure that the parent container is positioned relative */
+}
+
+.section-cta {
+  position: relative; /* Ensure that the section container is positioned relative */
+}
+
+.cta-text {
+  position: absolute; /* Position the text absolutely within its relative container */
+  top: 50%; /* Adjust to your needs */
+  left: 50%; /* Adjust to your needs */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the text horizontally and vertically */
+  text-align: center; /* Center-align the text */
+  width: 100%; /* Make the text container span the full width of the parent */
+}
+
+#cta-button {
+  padding: 15px 44px 15px 44px;
+}
+
+@media screen and (max-width: 720px) {
+  .shadow-custom {
+    box-shadow: none;
+  }
+}

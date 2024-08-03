@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Aset/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orangeku: "#FF793F",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="">
+      <nav
+        class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200"
+      >
+        <div
+          class="max-w-screen-xl md:mx-10 flex flex-wrap items-center justify-between p-4"
+        >
+          <a href="#" class="flex items-center space-x-1 rtl:space-x-reverse">
+            <img src="Aset/logoo.png" class="h-6 w-6" alt="Flowbite Logo" />
+            <span
+              class="self-center text-base font-semibold text-orangeku whitespace-nowrap"
+              >Aktivitasku</span
+            >
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-black border border-orangeku flex items-center justify-center font-medium rounded-full text-sm px-4 py-1.5 pt-1 hover:text-orangeku text-center"
+            >
+              Download
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-black"
+                  aria-current="page"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-black"
+                  >Fitur</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-black"
+                  >Testimoni</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-black"
+                  >Produk</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="md:flex mt-16 md:ml-10">
+        <section class="bg-white md:w-1/2 flex items-center justify-center">
+          <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+            <h1
+              class="mb-4 text-left text-4xl font-bold tracking-tight leading-none text-orangeku md:text-6xl"
+            >
+              Aktivitasku
+            </h1>
+            <p
+              class="mb-4 text-left text-5xl font-bold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-4xl"
+            >
+              Solusi Terbaik
+            </p>
+            <p
+              class="mb-4 text-left text-5xl font-bold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-4xl"
+            >
+              Mengelola <span class="text-orangeku">Waktu</span>
+            </p>
+            <p class="text-left mb-4 text-lg font-normal text-gray-500">
+              Dengan AktivitasKu, Kamu dapat merencanakan jadwal harian dengan
+              mudah dan mengingatkan anak-anak tentang tugas sekolahnya secara
+              otomatis
+            </p>
+            <div
+              class="flex flex-col gap-x-4 text-left sm:flex-row sm:space-y-0"
+            >
+              <a
+                href="#"
+                class="inline-flex justify-center items-center py-2.5 px-7 text-base font-medium text-center text-white rounded-full bg-orangeku hover:bg-orange-600"
+              >
+                Ayo Mulai
+              </a>
+              <a
+                href="#"
+                class="inline-flex justify-center items-center py-2.5 px-7 text-base font-medium text-center text-black rounded-full border border-orangeku hover:text-orangeku"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+        </section>
+        <div>
+          <section class="w-full">
+            <img
+              class=""
+              src="Aset/jumbotron-image.png"
+              alt="ini foto jumbotron"
+            />
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        <!-- article 1 -->
+        <article class="my-20">
+          <div class="text-center">
+            <h1 class="text-4xl font-semibold">
+              Fitur <span class="text-orangeku">Aktivitasku</span>
+            </h1>
+            <p class="text-lg font-normal text-gray-500">
+              Aktivitasku menyediakan tiga fitur utama yaitu Penambahan Jadwal,
+            </p>
+            <p class="text-lg font-normal text-gray-500">
+              Pengingat, dan juga Catatan
+            </p>
+          </div>
+          <section>
+            <div
+              class="md:flex md:mx-32 mx-5 mt-16 gap-x-20 md:space-y-0 space-y-5"
+            >
+              <div
+                class="bg-white shadow-custom rounded-2xl px-8 py-10 border border-orangeku"
+              >
+                <img class="mb-10" src="Aset/icon fitur (2).png" alt="" />
+                <h1 class="text-lg font-semibold">
+                  Rencanakan Kegiatan dengan Lebih Teratur
+                </h1>
+                <p class="text-sm text-gray-500">
+                  Dengan fitur penambah jadwal, Anda dapat dengan mudah
+                  merencanakan kegiatan sehari-hari anak Anda. Tidak perlu lagi
+                  khawatir tentang kegiatan yang terlewat
+                </p>
+              </div>
+              <div
+                class="bg-white shadow-custom rounded-2xl px-8 py-10 border border-orangeku"
+              >
+                <img class="mb-10" src="Aset/icon fitur (3).png" alt="" />
+                <h1 class="text-lg font-semibold">
+                  Tetap Teratur dengan Pengingat Otomatis
+                </h1>
+                <p class="text-sm text-gray-500">
+                  Dapatkan pengingat langsung untuk setiap kegiatan yang telah
+                  direncanakan. AktivitasKu memberikan pengingat otomatis yang
+                  membantu anak Anda tetap teratur dalam kegiatan
+                </p>
+              </div>
+              <div
+                class="bg-white shadow-custom rounded-2xl px-8 py-10 border border-orangeku"
+              >
+                <img class="mb-10" src="Aset/icon fitur (1).png" alt="" />
+                <h1 class="text-lg font-semibold">
+                  Mengungkapkan Isi Hati & Mendukung Pertumbuhan
+                </h1>
+                <p class="text-sm text-gray-500">
+                  Fitur ini memungkinkan anak untuk mengungkapkan pikiran,
+                  perasaan, dan pengalaman mereka dengan bebas. Orang tua dapat
+                  membantu mendukung pertumbuhan emosional anak
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <!-- Article 2: Testimoni -->
+        <article class="my-20">
+          <div class="text-center">
+            <h1 class="text-4xl font-semibold">
+              Beberapa <span class="text-orangeku">Testimoni Pengguna</span>
+            </h1>
+            <p class="text-lg font-normal text-gray-500">
+              Temukan bagaimana para Orang tua dan Pendidik dari berbagai latar
+            </p>
+            <p class="text-lg font-normal text-gray-500">
+              belakang telah mengubah hidup anak mereka melalui aplikasi
+              Aktivitasku
+            </p>
+            <p class="text-lg font-normal text-gray-500">
+              kini anak mereka sudah mulai bisa mengorganisir waktunya sendiri
+            </p>
+          </div>
+          <article>
+            <section class="testimonial-slider md:mx-32 mx-5 mt-16">
+              <div class="testimonial-container">
+                <div
+                  class="testimonial-item bg-white shadow-custom rounded-2xl px-8 py-10 border border-orangeku"
+                >
+                  <img class="mb-10" src="Aset\user1.png" alt="User 1" />
+                  <h1 class="text-lg font-semibold">Juan, Ibu Rumah Tangga</h1>
+                  <p class="text-sm text-gray-500">
+                    "Dengan AktivitasKu, saya bisa lebih mudah mengatur jadwal
+                    harian anak saya. Aplikasi ini sangat membantu!"
+                  </p>
+                </div>
+                <div
+                  class="testimonial-item bg-white shadow-custom rounded-2xl px-8 py-10 border border-orangeku"
+                >
+                  <img class="mb-10" src="Aset/user2.png" alt="User 2" />
+                  <h1 class="text-lg font-semibold">
+                    Syarifah Aulia, Ibu Dua Anak
+                  </h1>
+                  <p class="text-sm text-gray-500">
+                    "Fitur pengingat otomatis sangat membantu anak-anak saya
+                    tetap teratur dalam kegiatan sehari-hari mereka."
+                  </p>
+                </div>
+                <div
+                  class="testimonial-item bg-white shadow-custom rounded-2xl px-8 py-10 border border-orangeku"
+                >
+                  <img class="mb-10" src="Aset/user3.png" alt="User 3" />
+                  <h1 class="text-lg font-semibold">
+                    Aneisha Elvina, Pekerja Kantoran
+                  </h1>
+                  <p class="text-sm text-gray-500">
+                    "Aplikasi yang sangat bermanfaat! Saya bisa mengatur jadwal
+                    dengan lebih baik dan tidak perlu khawatir lagi tentang
+                    kegiatan yang terlewat."
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-controls">
+                <button class="prev-slide">‹</button>
+                <button class="next-slide">›</button>
+              </div>
+            </section>
+          </article>
+        </article>
+
+        <!-- artikel 3 fitur aplikasi -->
+        <article class="my-40">
+          <div class="text-center">
+            <h1 class="text-4xl font-semibold">
+              <span class="text-orangeku">Tampilan</span> Aplikasi Aktivitasku
+            </h1>
+            <p class="text-sm text-gray-500 mt-4">
+              Beberapa tampilan fitur utama pada aplikasi aktivitasku
+            </p>
+
+            <!-- fitur utama -->
+            <div class="custom-margin-fu">
+              <h1 class="mt-20 mb-3 text-left text-4xl font-semibold">
+                <span class="text-orangeku">Fitur</span> Utama
+              </h1>
+              <p class="text-left text-sm text-gray-500 mb-5">
+                Ini adalah fitur utama pada aplikasi Aktivitasku, terdapat
+                <br />
+                halaman beranda, jadwal, pengingat, catatan, kalender dan juga
+                <br />
+                profil
+              </p>
+              <img src="Aset/fituraktivitasku.png" alt="fiturutama" />
+            </div>
+
+            <!-- fitur pilih tema -->
+            <div class="mt-24 mx-20 flex">
+              <img src="Aset/pilihtema.png" alt="fiturpilihtema" />
+              <div class="fiturtema">
+                <h1 class="text-left text-4xl font-semibold">
+                  Fitur <span class="text-orangeku">Pilih Tema </span>
+                </h1>
+                <p class="text-left text-sm text-gray-500 mb-5">
+                  Ini adalah fitur pilih tema pada aplikasi Aktivitasku yang
+                  <br />
+                  bertujuan agar anak anak tidak jenuh dengan tema yang di
+                  <br />
+                  sediakan sistem
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- artikel 4 FAQ -->
+        <article class="mt-20 my-20 mx-48">
+          <h1 class="text-center text-4xl font-semibold">
+            Yang Sering Ditanyakan
+            <span class="text-orangeku">Di Aktivitasku</span>
+          </h1>
+          <!-- konten 1 -->
+          <div id="box-4-1" class="box-4">
+            <div
+              class="container shadow-custom p-6 bg-white rounded-3xl my-8 mt-16"
+            >
+              <div class="flex">
+                <div class="text-icn flex">
+                  <button
+                    id="toggleButton-1"
+                    class="toggleButton text-2xl font-semibold"
+                  >
+                    +
+                  </button>
+                  <h2 class="text-2xl ml-11 font-semibold">
+                    Bagaimana cara menggunakan fitur penjadwalan pada
+                    Aktivitasku?
+                  </h2>
+                </div>
+              </div>
+              <p
+                id="toggleContent-1"
+                class="toggleContent mt-4 text-gray-500 mx-28"
+              >
+                Menggunakan fitur penjadwalan cukup mudah, dengan cara pengguna
+                klik kategori Jadwal kemudian pilih hari yang akan diinputkan,
+                setelah itu pengguna dapat menambahkan Jadwal yang diinginkan
+                dan yang terakhir pengguna diarahkan untuk klik tombol simpan
+                untuk menyimpan Jadwal.
+              </p>
+            </div>
+          </div>
+
+          <!-- konten 2 -->
+          <div id="box-4-2" class="box-4">
+            <div class="container shadow-custom p-6 bg-white rounded-3xl my-8">
+              <div class="flex">
+                <div class="text-icn flex">
+                  <button
+                    id="toggleButton-2"
+                    class="toggleButton text-2xl font-semibold"
+                  >
+                    +
+                  </button>
+                  <h2 class="text-2xl ml-11 font-semibold">
+                    Apakah ada batasan jumlah kegiatan yang dapat dijadwalkan?
+                  </h2>
+                </div>
+              </div>
+              <p
+                id="toggleContent-2"
+                class="toggleContent mt-4 text-gray-500 mx-28"
+              >
+                Tidak ada batasan jumlah kegiatan yang dapat dijadwalkan dalam
+                aplikasi Aktivitasku saat ini. Pengguna bebas menambahkan jadwal
+                sesuai kebutuhan mereka. Namun, disarankan untuk mengelola
+                jadwal dengan bijak agar performa aplikasi tetap optimal.
+                Batasan jumlah kegiatan dapat dipertimbangkan di masa mendatang
+                berdasarkan umpan balik pengguna dan performa aplikasi.
+              </p>
+            </div>
+          </div>
+
+          <!-- konten 3 -->
+          <div id="box-4-3" class="box-4">
+            <div class="container shadow-custom p-6 bg-white rounded-3xl my-8">
+              <div class="flex">
+                <div class="text-icn flex">
+                  <button
+                    id="toggleButton-3"
+                    class="toggleButton text-2xl font-semibold"
+                  >
+                    +
+                  </button>
+                  <h2 class="text-2xl ml-11 font-semibold">
+                    Apakah Aktivitasku tersedia untuk semua platform seluler?
+                  </h2>
+                </div>
+              </div>
+              <p
+                id="toggleContent-3"
+                class="toggleContent mt-4 text-gray-500 mx-28"
+              >
+                Aktivitasku saat ini tersedia untuk platform iOS dan Android,
+                sehingga dapat diakses oleh pengguna di kedua sistem operasi
+                tersebut.
+              </p>
+            </div>
+          </div>
+
+          <!-- konten 4 -->
+          <div id="box-4-4" class="box-4">
+            <div class="container shadow-custom p-6 bg-white rounded-3xl my-8">
+              <div class="flex">
+                <div class="text-icn flex">
+                  <button
+                    id="toggleButton-4"
+                    class="toggleButton text-2xl font-semibold"
+                  >
+                    +
+                  </button>
+                  <h2 class="text-2xl ml-11 font-semibold">
+                    Bagaimana cara menggunakan fitur catatan?
+                  </h2>
+                </div>
+              </div>
+              <p
+                id="toggleContent-4"
+                class="toggleContent mt-4 text-gray-500 mx-28"
+              >
+                Untuk menggunakan fitur catatan di Aktivitasku, buka aplikasi di
+                perangkat Anda dan navigasi ke bagian 'Catatan' melalui navbar
+                atau dasbor. Untuk menambah catatan baru, tekan tombol tambah
+                (+) dan masukkan judul serta isi catatan sesuai kebutuhan Anda.
+                Setelah selesai menulis, tekan tombol 'Simpan' untuk menyimpan
+                catatan. Anda dapat melihat dan mengedit daftar catatan yang
+                telah dibuat dengan mengetuk catatan yang diinginkan. Jika ingin
+                menghapus catatan, tekan dan tahan catatan yang ingin dihapus,
+                lalu pilih opsi 'Hapus'.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- CTA -->
+        <section class="CTA mt-28">
+          <div class="section-cta">
+            <img src="Aset/CTA-bg.png" alt="CTA-bg" class="cta-image" />
+            <div class="cta-text mx-28">
+              <h1 class="text-left text-5xl font-semibold leading-normal">
+                Apakah Kamu Sudah <br /><span class="text-orangeku"
+                  >Siap Produktif?</span
+                >
+              </h1>
+              <button
+                id="cta-button"
+                class="flex justify-start bg-orangeku text-white my-6 rounded-full hover:font-semibold transition-all text-2xl"
+              >
+                Ayo Mulai
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="pt-12">
+      <div class="container mx-auto flex flex-wrap justify-between">
+        <!-- Logo dan Deskripsi -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0 text-gray-500">
+          <img
+            src="Aset/logofulllogoo (1).png"
+            alt="logoaktivitasku"
+            class="w-56 h-11 cursor-pointer"
+          />
+          <p class="text-gray-500 mt-6">
+            Membantu Anda Mengatur Jadwal dan <br />
+            Aktivitas dengan Lebih Mudah
+          </p>
+        </div>
+
+        <!-- Navigasi -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0 text-gray-500">
+          <p class="text-orangeku text-xl font-semibold mb-2">Navigasi</p>
+          <div class="navigasi-footer mt-10">
+            <p class="cursor-pointer hover:text-gray-700 mb-4">Beranda</p>
+            <p class="cursor-pointer hover:text-gray-700 mb-4">Fitur</p>
+            <p class="cursor-pointer hover:text-gray-700 mb-4">Testimoni</p>
+            <p class="cursor-pointer hover:text-gray-700 mb-4">Produk</p>
+          </div>
+        </div>
+
+        <!-- Tautan -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0 text-gray-500 font-normal">
+          <p class="text-orangeku text-xl font-semibold mb-2">Tautan</p>
+          <div class="tautan-footer mt-10">
+            <p class="cursor-pointer hover:text-gray-700 mb-4">Tentang Kami</p>
+            <p class="cursor-pointer hover:text-gray-700 mb-4">Blog</p>
+            <p class="cursor-pointer hover:text-gray-700 mb-4">
+              Kebijakan Privasi
+            </p>
+            <p class="cursor-pointer hover:text-gray-700 mb-4">Bantuan</p>
+            <p class="cursor-pointer hover:text-gray-700 mb-4">FAQ</p>
+          </div>
+        </div>
+
+        <!-- Kontak -->
+        <div class="w-full md:w-1/4 text-gray-500">
+          <p class="text-orangeku text-xl mb-2 font-semibold">Kontak</p>
+          <div class="kontak-footer mt-10">
+            <p class="cursor-pointer hover:text-gray-700 mb-4">
+              Email : aktivitasku@gmail.com
+            </p>
+            <p class="cursor-pointer hover:text-gray-700 mb-4">
+              No. Telepon : 0812-3456-7890
+            </p>
+          </div>
+        </div>
+
+        <section
+          class="copyright my-10 border-t-2 border-orangeku flex justify-between items-center w-full py-4"
+        >
+          <div class="copyright">
+            <p class="text-gray-500">Copyright © 2024 Aktivitasku</p>
+          </div>
+          <div class="platform flex gap-4">
+            <img
+              src="Aset/iglogo.png"
+              alt="ig-logo"
+              class="w-6 h-6 mx-4 cursor-pointer"
+            />
+            <img
+              src="Aset/walogo.png"
+              alt="walogo"
+              class="w-6 h-6 mx-4 cursor-pointer"
+            />
+            <img
+              src="Aset/xlogo.png"
+              alt="xlogo"
+              class="w-6 h-6 mx-4 cursor-pointer"
+            />
+            <img
+              src="Aset/flogo.png"
+              alt="flogo"
+              class="w-6 h-6 mx-4 cursor-pointer"
+            />
+            <img
+              src="Aset/ytlogo.png"
+              alt="yt-logo"
+              class="w-6 h-6 mx-4 cursor-pointer"
+            />
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="Aset/slider.js"></script>
+  </body>
+</html>
